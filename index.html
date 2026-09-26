@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The3xot1c DualSense Black</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="stage">
+  <div class="brand">The3xot1c</div>
+  <svg class="controller" viewBox="0 0 1200 760" aria-label="DualSense style controller">
+    <defs>
+      <linearGradient id="shell" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#17191d"/><stop offset=".55" stop-color="#0c0e12"/><stop offset="1" stop-color="#050609"/></linearGradient>
+      <linearGradient id="inner" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101216"/><stop offset="1" stop-color="#07080b"/></linearGradient>
+      <radialGradient id="stick"><stop stop-color="#25282e"/><stop offset=".65" stop-color="#101216"/><stop offset="1" stop-color="#050609"/></radialGradient>
+      <filter id="shadow"><feDropShadow dx="0" dy="22" stdDeviation="22" flood-color="#000" flood-opacity=".65"/></filter>
+      <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    </defs>
+    <!-- recognizable DualSense silhouette -->
+    <path class="shell" filter="url(#shadow)" d="M175 185 C210 112 312 78 414 91 C482 100 526 125 600 125 C674 125 718 100 786 91 C888 78 990 112 1025 185 C1050 238 1046 315 1030 385 C1013 460 1010 548 954 604 C912 645 858 620 828 570 C794 513 756 488 703 482 C659 477 541 477 497 482 C444 488 406 513 372 570 C342 620 288 645 246 604 C190 548 187 460 170 385 C154 315 150 238 175 185 Z"/>
+    <path class="inner" d="M226 204 C258 151 330 129 407 140 C481 151 517 181 600 181 C683 181 719 151 793 140 C870 129 942 151 974 204 C995 240 994 300 981 350 C966 409 954 492 918 528 C898 548 879 525 854 482 C815 415 764 386 704 379 C650 373 550 373 496 379 C436 386 385 415 346 482 C321 525 302 548 282 528 C246 492 234 409 219 350 C206 300 205 240 226 204 Z"/>
+    <!-- touchpad -->
+    <rect class="touch" x="435" y="177" width="330" height="142" rx="25"/>
+    <text x="600" y="255" text-anchor="middle" class="touchText">The3xot1c</text>
+    <!-- speaker/mic detail -->
+    <g class="speaker"> <circle cx="600" cy="345" r="3"/><circle cx="588" cy="345" r="3"/><circle cx="612" cy="345" r="3"/></g>
+    <!-- D-pad -->
+    <g class="dpad" data-group="dpad">
+      <rect data-b="12" x="270" y="295" width="46" height="62" rx="10"/><rect data-b="13" x="270" y="373" width="46" height="62" rx="10"/>
+      <rect data-b="14" x="230" y="335" width="62" height="46" rx="10"/><rect data-b="15" x="308" y="335" width="62" height="46" rx="10"/>
+      <circle cx="293" cy="358" r="20" fill="#08090c"/>
+      <text x="293" y="327" class="dtext">▲</text><text x="293" y="423" class="dtext">▼</text><text x="254" y="367" class="dtext">◀</text><text x="333" y="367" class="dtext">▶</text>
+    </g>
+    <!-- face buttons -->
+    <g class="faces">
+      <g data-b="3"><circle cx="907" cy="300" r="27"/><text x="907" y="309">△</text></g>
+      <g data-b="1"><circle cx="963" cy="357" r="27"/><text x="963" y="366">○</text></g>
+      <g data-b="0"><circle cx="907" cy="414" r="27"/><text x="907" y="423">×</text></g>
+      <g data-b="2"><circle cx="851" cy="357" r="27"/><text x="851" y="366">□</text></g>
+    </g>
+    <!-- sticks -->
+    <g class="stick" data-a="0,1"><circle cx="455" cy="430" r="54"/><circle cx="455" cy="430" r="31" class="cap"/></g>
+    <g class="stick" data-a="2,3"><circle cx="745" cy="430" r="54"/><circle cx="745" cy="430" r="31" class="cap"/></g>
+    <!-- center buttons -->
+    <g class="center"><rect data-b="8" x="405" y="352" width="62" height="25" rx="12"/><text x="436" y="369">SHARE</text><rect data-b="9" x="733" y="352" width="62" height="25" rx="12"/><text x="764" y="369">OPTIONS</text><circle data-b="10" cx="600" cy="416" r="25"/><text x="600" y="421">PS</text><circle data-b="11" cx="600" cy="462" r="7" class="mute"/></g>
+    <!-- shoulder controls -->
+    <g class="shoulders"><text data-b="4" x="220" y="145">L1</text><text data-b="5" x="980" y="145">R1</text><text data-b="6" x="205" y="112">L2</text><text data-b="7" x="995" y="112">R2</text></g>
+  </svg>
+  <div id="status">DualSense • Controller wird gesucht…</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
