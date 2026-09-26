@@ -1,0 +1,86 @@
+/*
+  The3xot1c - PS5 Black Gamepad Viewer
+  Edit CSS for Gamepad Viewer PS5 skin.
+  Base skin: s=5
+*/
+
+.edit .controller,
+.edit .controller.custom {
+  filter: none !important;
+}
+
+/* Main PS5 body */
+.edit .controller .body,
+.edit .controller .controller-body,
+.edit .controller .face {
+  background-color: #080808 !important;
+  background-image: none !important;
+  border-color: #1c1c1c !important;
+  box-shadow: inset 0 0 0 2px #222, 0 0 18px rgba(0,0,0,.65) !important;
+}
+
+/* Common PS5 skin image/body overrides */
+.edit .controller .base,
+.edit .controller .body,
+.edit .controller .shell {
+  background-color: #080808 !important;
+  background-image: none !important;
+}
+
+/* Touchpad */
+.edit .controller .touchpad {
+  background-color: #111 !important;
+  border-color: #333 !important;
+  box-shadow: inset 0 0 0 1px #222 !important;
+}
+
+/* D-pad and face buttons */
+.edit .controller .dpad,
+.edit .controller .button,
+.edit .controller .face-button {
+  color: #f2f2f2 !important;
+}
+
+/* Button labels */
+.edit .controller .button.pressed,
+.edit .controller .face-button.pressed,
+.edit .controller .dpad.pressed {
+  filter: brightness(1.35) !important;
+}
+
+/* Sticks */
+.edit .controller .stick,
+.edit .controller .stick.pressed {
+  background-color: #111 !important;
+  border-color: #333 !important;
+}
+
+/* Triggers / bumpers */
+.edit .controller .trigger,
+.edit .controller .bumper {
+  background-color: #101010 !important;
+  border-color: #2a2a2a !important;
+}
+
+/* PS button */
+.edit .controller .ps-button {
+  background-color: #111 !important;
+}
+
+/* Branding */
+.edit .controller::after {
+  content: "The3xot1c";
+  position: absolute;
+  left: 50%;
+  top: 7%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  pointer-events: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #f5f5f5;
+  text-shadow: 0 0 8px rgba(255,255,255,.25);
+  white-space: nowrap;
+}
